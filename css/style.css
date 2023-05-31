@@ -4,16 +4,14 @@
     padding: 0;
 }
 
-header {
-    background-color: orange;
-}
-
 nav {
-    max-width: 980px;
-    margin: auto;
+    width: 100%;
+    background-color: orange;
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1;
 }
 
 nav li {
@@ -29,4 +27,50 @@ nav a {
 .nav-logo img {
     height: 30px;
     margin: 10px 0px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col {
+    width: 33.3%;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.product-card {
+    width: 100%;
+}
+
+.tags{
+    position: absolute;
+    bottom: 100px;
+    color: white;
+}
+
+.sale-percentage-tag {
+    padding: 5px;
+    background-color: red;
+}
+
+.sustainability-tag {
+    padding: 5px;
+    background-color: green;
+}
+
+.price {
+    color: red;
+}
+
+.discount {
+    text-decoration:line-through;
 }
