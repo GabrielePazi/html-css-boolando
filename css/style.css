@@ -33,7 +33,7 @@ nav a {
     max-width: 1000px;
     width: 100%;
     margin: auto;
-    padding-top: 100px;
+    padding: 100px 0px;
 }
 
 .row {
@@ -73,4 +73,34 @@ nav a {
 
 .discount {
     text-decoration:line-through;
+}
+
+footer {
+    height: 150px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container h4{
+    padding-left: 10px;
+    color: white;
+}
+
+footer li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
