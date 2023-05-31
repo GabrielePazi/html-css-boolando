@@ -51,6 +51,25 @@ nav a {
     width: 100%;
 }
 
+.top-overlay {
+    position: absolute;
+    right: 1rem;
+    top: 30px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.favourite {
+    font-size: 1.5rem;
+}
+
+.top-overlay:hover {
+    color: red;
+}
+
 .tags{
     position: absolute;
     bottom: 100px;
