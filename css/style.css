@@ -39,6 +39,7 @@ nav a {
 .row {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 20px;
 }
 
 .col {
@@ -49,7 +50,28 @@ nav a {
 
 .product-card {
     width: 100%;
+    position: relative;
 }
+
+.main-card {
+    display: block;
+    width: 100%;
+}
+
+.bis-card {
+    width: 100%;
+    display: none;
+}
+
+.product-card:hover .main-card{
+    display: none;
+}
+
+.product-card:hover .bis-card{
+    display: block;
+}
+
+
 
 .top-overlay {
     position: absolute;
@@ -64,10 +86,12 @@ nav a {
 
 .favourite {
     font-size: 1.5rem;
+    z-index: 3;
 }
 
 .top-overlay:hover {
     color: red;
+    cursor: pointer;
 }
 
 .tags{
